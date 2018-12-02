@@ -15,12 +15,12 @@ public class OLS_LinearRegression : MonoBehaviour {
     float b = 0;
 
     //store a list of the positions of each click (dataPoint)
-    public List<Vector2> dataPoints = new List<Vector2>();
+    public List<Vector2> data = new List<Vector2>();
 
     void Update () {
 
         //draw a line if there's at least 2 data points
-        if(dataPoints.Count > 1)
+        if(data.Count > 1)
         {
             CalculateLinearRegression();
             drawLine();
@@ -36,7 +36,7 @@ public class OLS_LinearRegression : MonoBehaviour {
             GameObject newDataPoint = Instantiate(dataPoint, worldPos, Quaternion.identity);
 
             //add to data list 
-            dataPoints.Add(new Vector2(newDataPoint.transform.position.x, newDataPoint.transform.position.y));
+            data.Add(new Vector2(newDataPoint.transform.position.x, newDataPoint.transform.position.y));
             //print(new Vector2(newDataPoint.transform.position.x, newDataPoint.transform.position.y));
         } 	
 	}
@@ -48,6 +48,10 @@ public class OLS_LinearRegression : MonoBehaviour {
         float y1 = m * x1 + b; // = y1 = b
         float x2 = 100; //and end at the right side
         float y2 = m * x2 + b;
+
+        //clamp it so that it doesnt go further than the graph
+        //y1 = Mathf.Clamp(y1, 0, 100);
+        //y2 = Mathf.Clamp(y2, 0, 100);
 
         lineStart.position = new Vector3(x1, y1, 0);
         lineEnd.position = new Vector3(x2, y2, 0);
@@ -61,24 +65,24 @@ public class OLS_LinearRegression : MonoBehaviour {
         //calculate the sum of each
         float xSum = 0;
         float ySum = 0;
-        for (int i = 0; i < dataPoints.Count; i++)
+        for (int i = 0; i < data.Count; i++)
         {
-            xSum += dataPoints[i].x;
-            ySum += dataPoints[i].y;
+            xSum += data[i].x;
+            ySum += data[i].y;
         }
 
 
         //work out the average
-        float xMean = xSum / dataPoints.Count;
-        float yMean = ySum / dataPoints.Count;
+        float xMean = xSum / data.Count;
+        float yMean = ySum / data.Count;
 
         //work out the top part of the formula and the bottom part
         float num = 0;
         float den = 0;
-        for (int i = 1; i < dataPoints.Count; i++)
+        for (int i = 1; i < data.Count; i++)
         {
-            float x = dataPoints[i].x;
-            float y = dataPoints[i].y;
+            float x = data[i].x;
+            float y = data[i].y;
             num += (x - xMean) * (y - yMean);
             den += (x - xMean) * (x - xMean);
         }
@@ -91,5 +95,9 @@ public class OLS_LinearRegression : MonoBehaviour {
 
         print(m);
         print(b);
+    }
+
+    private void Start()
+    {
     }
 }

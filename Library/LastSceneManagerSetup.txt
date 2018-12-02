@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/Linear Regression using Gradient Descent.unity
+- path: Assets/Scenes/Gradient Descent - Liniar Regression.unity
   isLoaded: 1
   isActive: 1
