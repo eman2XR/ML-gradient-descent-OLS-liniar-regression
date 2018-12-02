@@ -3,6 +3,7 @@ While taking the Machine Learning course on Coursera by Andrew Ng, I decided to 
 
 The example demonstrates how the [gradient descent](http://en.wikipedia.org/wiki/Gradient_descent) algorithm can be implemented in C# to solve a liniar equation problem. 
 I've made all the equations visible in the inspector:
+
 <img src="https://github.com/eman-insilico/Unity-ML-gradient-descent-OLS-liniar-regression/blob/master/Gradient%20Descent%20inspector.JPG" width="220">
 
 ### Code Requirements
