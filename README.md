@@ -17,9 +17,9 @@ num_iterations = 1000
 
 Using these parameters a gradient descent search is executed on a sample data set of 100 ponts. Here is a visualization of the search running for 200 iterations using an initial guess of `m = 0`, `b = 0`, and a learning rate of `0.000005`.
 
-<img src="https://github.com/eman-insilico/Unity-ML-gradient-descent-OLS-liniar-regression/blob/master/OLS.gif" width="300">
+<img src="https://github.com/eman-insilico/Unity-ML-gradient-descent-OLS-liniar-regression/blob/master/OLS.gif" width="450">
 
-<img src="https://github.com/eman-insilico/Unity-ML-gradient-descent-OLS-liniar-regression/blob/master/Gradient%20Descent.gif" width="300">
+<img src="https://github.com/eman-insilico/Unity-ML-gradient-descent-OLS-liniar-regression/blob/master/Gradient%20Descent.gif" width="450">
 
 ### Execution
 To run the example, simply run the `gradient_descent_example.py` file using Python
