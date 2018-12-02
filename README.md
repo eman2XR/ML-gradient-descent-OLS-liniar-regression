@@ -2,7 +2,7 @@
 While taking the Machine Learning course on Coursera by Andrew Ng, I decided to try to implement some of the things I learnt inside Unity. This exmple was adapted from [The Coding Train video](https://www.youtube.com/watch?v=L-Lsfu4ab74).
 
 The example demonstrates how the [gradient descent](http://en.wikipedia.org/wiki/Gradient_descent) algorithm can be implemented in C# to solve a liniar equation problem.  
-<img src="https://github.com/eman-insilico/Unity-ML-gradient-descent-OLS-liniar-regression/blob/master/Gradient%20Descent%20inspector.JPG" width="120">
+<img src="https://github.com/eman-insilico/Unity-ML-gradient-descent-OLS-liniar-regression/blob/master/Gradient%20Descent%20inspector.JPG" width="220">
 
 ### Code Requirements
 The example code is in Python ([version 2.6](https://www.python.org/doc/versions/) or higher will work). The only other requirement is [NumPy](http://www.numpy.org/).
