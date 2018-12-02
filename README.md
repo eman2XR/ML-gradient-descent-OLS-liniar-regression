@@ -7,11 +7,11 @@ All the equations are visible in the inspector:
 <img src="https://github.com/eman-insilico/Unity-ML-gradient-descent-OLS-liniar-regression/blob/master/Gradient%20Descent%20inspector.JPG" width="220">
 
 ### Liniar Regression using Ordinary Least Square method
-Clicking on the screen adds points and the the line is drawn to best fit the data:
+Clicking on the screen adds points and the the line is calculated instantly to best fit the data. 
 <img src="https://github.com/eman-insilico/Unity-ML-gradient-descent-OLS-liniar-regression/blob/master/OLS.gif" width="450">
 
 
 ### Liniar Regression using Gradient Descent
-Clicking on the screen adds points and the the line is drawn to best fit the data:
+With gradient descent, the line slowly moves to the correct position:
 <img src="https://github.com/eman-insilico/Unity-ML-gradient-descent-OLS-liniar-regression/blob/master/Gradient%20Descent.gif" width="450">
 
